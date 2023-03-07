@@ -1,0 +1,78 @@
+.pages
+  margin-top: 80px
+  &-box
+    display: none
+    &__active
+      display: flex
+      justify-content: space-between
+      color: #ffffff
+    &__left
+      width: 47%
+    &__right
+      width: 47%
+    &__item
+        display: flex
+        justify-content: space-between
+        border-bottom: 1px solid #ffffff
+        padding-bottom: 20px
+        margin-top: 30px
+        &-special
+          padding-bottom: 0px
+          margin-top: 0px
+  &-item
+    
+    &__title
+      font-size: 18px
+      +glr
+    &__subtitle
+      display: block
+      width: 445px
+      margin-top: 10px
+      font-size: 16px
+      +glr
+      line-height: 25px
+    &__price
+      display: block
+      padding-top: 10px
+      font-size: 24px
+      +glrsb
+.title-special
+  margin-top: 30px
+
+@media (max-width: 1200px)
+  .pages
+    
+    &-item
+      &__subtitle
+        width: 300px
+        font-size: 15px
+      &__price
+        font-size: 20px
+
+@media (max-width: 991px)
+  .pages
+    &-box
+      &__item
+        margin-top: 15px
+        padding-bottom: 10px
+    &-item
+      &__subtitle
+        width: 100%
+        font-size: 15px
+        margin-top: 5px
+      &__price
+        width: 80px
+        font-size: 20px
+        padding-top: 5px
+        text-align: center
+
+@media (max-width: 768px)
+  .pages
+    &-box
+      &__active
+        justify-content: center
+        flex-direction: column
+      &__left
+        width: 100%
+      &__right
+        width: 100%

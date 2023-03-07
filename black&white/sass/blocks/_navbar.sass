@@ -1,0 +1,145 @@
+.navbar
+  &-block
+    display: flex
+    justify-content: space-between
+    color: $text-color
+    &__item
+      margin-top: 50px
+      position: relative
+    &__image
+      width: 24px
+      height: 24px
+    &__item
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+    &__link
+      text-decoration: none
+      color: $text-color
+      font-size: 16px
+      +glr
+      margin-left: 10px
+    &__text
+      font-size: 16px
+      +glr
+      line-height: 20px
+      margin-left: 10px
+  &-element
+    width: 50px
+    height: 50px
+    background-color: transperent
+    border-radius: 50%
+    position: relative
+    z-index: 10
+  &__menubutton
+    position: absolute
+    top: 20px
+    left: 0
+    width: 25px
+    height: 2px
+    background-color: $text-color
+    &:before
+      position: absolute
+      content: ''
+      width: 40px
+      height: 2px
+      background-color: $text-color
+      transform: translateY(-10px)
+      transition: 0.3s
+    &:after
+      content: ''
+      position: absolute
+      width: 40px
+      height: 2px
+      background-color: $text-color
+      transform: translateY(10px)
+      transition: 0.3s
+.navbar-element__active
+  z-index: 10
+  background-color: transperent
+  .navbar__menubutton
+    height: 0
+.navbar-element__active span::before
+  transform: rotate(40deg)
+  background-color: #0F0F0F
+  z-index: 10
+.navbar-element__active span::after
+  transform: rotate(-40deg)
+  background-color: #0F0F0F
+  z-index: 10
+.navbar-menu
+  &__burger
+    opacity: 0
+    width: 100%
+    transition: 0.5s
+    position: absolute
+    z-index: -1
+    text-align: center
+    margin: 0
+    padding: 120px 0
+    top: 0px
+    left: 0px
+  &__active
+    text-align: center
+    padding: 0
+    width: 100%
+    position: absolute
+    top: 0px
+    left: 0px
+    background-color: #fff
+    z-index: 7
+    margin: 0
+    opacity: 100
+    transition: 0.5s
+    padding: 120px 0
+  &__burger-point
+    display: inline-block
+    margin: 10px 0
+    position: relative
+    font-size: 14px
+    text-decoration: none
+    color: #0F0F0F
+    font-size: 64px
+    +glr
+    font-weight: 300
+    margin-top: 40px
+    &:before
+      position: absolute
+
+      bottom: -7px
+      content: ''
+      width: 0
+      height: 2px
+      background-color: #0F0F0F
+      transition: 0.5s
+    &:hover
+      &:before
+        width: 100%
+        transition: 0.5s
+
+@media (max-width: 991px)
+  .navbar
+    &-block
+      &__none
+        display: none
+    &-menu
+      &__burger
+        padding: 60px 0
+        width: 400px
+        &-point
+          font-size: 30px
+          margin-top: 20px
+
+@media (max-width: 572px)
+  .navbar
+    &-block
+      width: 300px
+      margin: 0 auto
+    &-menu
+      &__burger
+        padding: 60px 0
+        width: 100%
+        &-point
+          font-size: 30px
+          margin-top: 20px

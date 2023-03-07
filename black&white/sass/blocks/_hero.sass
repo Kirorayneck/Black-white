@@ -1,0 +1,77 @@
+.hero
+  &-logo
+    width: 700px
+    height: 200px
+    margin: 0 auto
+    margin-top: 150px
+  &-title
+    display: block
+    width: 385px
+    font-size: 24px
+    +glr
+    color: $text-color
+    font-weight: 300
+    margin: 0 auto
+    margin-top: 70px
+  &-button
+    display: block
+    width: 260px
+    height: 65px
+    margin: 0 auto
+    margin-top: 100px
+    background-color: transparent
+    background-repeat: no-repeat
+    font-size: 18px
+    +glr
+    color: $text-color
+    font-weight: 300
+    border: 1px solid $text-color
+    &:hover
+      background-color: #fff
+      color: #0F0F0F
+
+@media (max-width: 1200px)
+  .hero
+    &-logo
+      width: 500px
+      margin-top: 0
+    &-title
+      width: 330px
+      font-size: 20px
+      margin-top: 50px
+    &-button
+      width: 200px
+      height: 55px
+      margin-top: 50px
+      font-size: 16px
+
+@media (max-width: 768px)
+  .hero
+    &-logo
+      width: 500px
+      margin-top: 0
+    &-title
+      width: 330px
+      font-size: 20px
+      margin-top: 50px
+    &-button
+      width: 200px
+      height: 55px
+      margin-top: 50px
+      font-size: 16px
+
+@media (max-width: 572px)
+  .hero
+    &-logo
+      width: 300px
+      height: 100px
+      margin-top: 0
+    &-title
+      width: 260px
+      font-size: 16px
+      margin-top: 40px
+    &-button
+      width: 200px
+      height: 55px
+      margin-top: 50px
+      font-size: 16px

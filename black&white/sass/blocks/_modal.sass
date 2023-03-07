@@ -1,0 +1,62 @@
+.modal
+  display: none
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  &_active
+    display: flex
+  &-form
+    &__block
+      width: 260px
+      margin: 0 auto
+    &__title
+      display: block
+      text-align: center
+      font-size: 24px
+      +glrsb
+      font-weight: 700
+      text-transform: uppercase
+      margin-top: 20px
+    &__input
+      background-color: #fff
+      display: block
+      width: 260px
+      height: 40px
+      margin: 0 auto
+      border: 1px solid darken($text-color, 50%)
+      margin-top: 10px
+      padding-left: 10px
+      &-title
+        display: block
+        margin-top: 20px
+        font-size: 14px
+        +glr
+    &__button
+      width: 260px
+      font-size: 20px
+      +glr
+      padding: 15px 0
+      margin-top: 50px
+      background-color: #fff
+      border: 1px solid #000
+      &:hover
+        background-color: #000000
+        color: $text-color
+  &-dialog
+    position: relative
+    margin: auto
+    max-width: 500px
+    width: 90%
+    min-width: 200px
+    background-color: #fff
+    padding: 40px
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+      background-color: #fff
+      margin-top: 20px
+      margin-right: 20px

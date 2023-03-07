@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/gilroy/Gilroy-Regular.eot');
+  src: url('../fonts/gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gilroy/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gilroy-sb';
+  src: url('../fonts/gilroysb/Gilroy-Semibold.eot');
+  src: url('../fonts/gilroysb/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gilroysb/Gilroy-Semibold.woff') format('woff'),
+    url('../fonts/gilroysb/Gilroy-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gilroy-h';
+  src: url('../fonts/gilroyh/Gilroy-Heavy.eot');
+  src: url('../fonts/gilroyh/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gilroyh/Gilroy-Heavy.woff') format('woff'),
+    url('../fonts/gilroyh/Gilroy-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin glr {
+  font-family: 'gilroy', sans-serif;
+}
+@mixin glrsb {
+  font-family: 'gilroy-sb', sans-serif;
+}
+@mixin glrh {
+  font-family: 'gilroy-h', sans-serif;
+}
+@mixin shadow {
+    text-shadow: 1px 1px 0 darken($text-color, 50%),
+    1px -1px 0 darken($text-color, 50%),
+    -1px 1px 0 darken($text-color, 50%),
+    -1px -1px 0 darken($text-color, 50%),
+}

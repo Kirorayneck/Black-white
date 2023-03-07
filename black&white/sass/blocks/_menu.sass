@@ -1,0 +1,49 @@
+.menu
+  margin-top: 80px
+  &-title
+    font-size: 96px
+    +glrh
+    text-transform: uppercase
+    +shadow
+    letter-spacing: 20px
+  &-gallery
+    margin-top: 40px
+    &__item
+      color: #ffffff
+      text-align: center  
+      &-title
+        position: relative
+        display: inline-block
+        height: 26px
+        font-size: 20px
+        font-weight: 700
+        +glr
+        text-transform: uppercase
+        cursor: pointer
+        &:before
+          position: absolute
+          bottom: 0
+          left: 0
+          content: ''
+          width: 0
+          height: 2px
+          background-color: #ffffff
+          transition: 0.5s
+        &:hover
+          &:before
+            width: 100%
+            transition: 0.5s   
+  &__arrows
+    display: flex
+    margin-left: 85%
+    width: 100px
+    justify-content: space-between
+    margin-top: 20px
+
+@media (max-width: 768px)
+  .menu
+    &__arrows
+      margin: 0 auto
+      margin-top: 20px
+    /* &-title
+      margin: 0 auto */

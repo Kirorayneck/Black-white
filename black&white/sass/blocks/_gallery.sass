@@ -1,0 +1,72 @@
+.gallery
+  &-title
+    font-size: 96px
+    +glrh
+    text-transform: uppercase
+    +shadow
+    letter-spacing: 20px
+  &-container
+    max-width: 1555px
+    margin: 0 auto
+    margin-right: 0
+  &-block
+    margin-top: 50px
+    &__item
+      margin: 0 20px
+  &__arrows
+    display: flex
+    margin-left: 85%
+    width: 100px
+    justify-content: space-between
+    margin-top: 20px
+
+@media (max-width: 1600px)
+  .gallery
+    &-title
+      display: block
+      width: 500px
+    &-container
+      max-width: 90%
+      
+@media (max-width: 1200px)
+  .gallery
+    margin-top: 80px
+    &-title
+      display: block
+      width: 500px
+    &-container
+      max-width: 95%
+      width: 990px
+
+
+@media (max-width: 991px)
+  .gallery
+    
+    &-title
+      font-size: 68px
+    &-container
+      width: 90%
+      margin: 0 auto
+    &-block
+      margin-top: 50px
+
+@media (max-width: 572px)
+  .gallery
+    &-title
+      font-size: 44px
+      width: 300px
+      margin: 0 auto
+      text-align: center
+    &-container
+      width: 300px
+      margin: 0 auto
+    &-block
+      width: 100%
+      margin: 0 auto
+      margin-top: 30px
+    &__arrows
+      display: flex
+      margin: 0 auto
+      width: 100px
+      justify-content: space-between
+      margin-top: 10px

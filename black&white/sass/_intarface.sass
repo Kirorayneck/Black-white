@@ -1,0 +1,59 @@
+*
+  box-sizing: border-box
+  outline: none
+body
+  line-height: 1
+  background-color: #0F0F0F
+h1, h2, h3
+  padding: 0
+  margin: 0
+img
+  width: 100%
+  height: auto
+a
+  text-decoration: none
+.input
+  border: none
+  outline: none
+.button
+  border: none
+  outline: none
+  cursor: pointer
+.container
+  position: relative
+  width: 1170px
+  margin: auto
+.button-up
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  background: url('../img/up-button/up.png') no-repeat;
+.wrap
+  position: absolute
+  width: 100%
+  left: 0
+  top: 0
+.section
+  margin-top: 150px
+
+@media (max-width: 1200px)
+  .container
+    width: 90%
+  .section
+    margin-top: 100px
+
+@media (max-width: 768px)
+  .container
+    max-width: 572px
+    width: 95%
+  .section
+    margin-top: 80px
+    
+@media (max-width: 572px)
+  .container
+    width: 310px
+  .button-up
+    right: 20px

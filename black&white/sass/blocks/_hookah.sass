@@ -1,0 +1,72 @@
+.hookah
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-align: center
+    color: $text-color
+    &__button
+      display: block
+      width: 260px
+      margin: 0 auto
+      margin-top: 100px
+      background-color: transparent
+      background-repeat: no-repeat
+      font-size: 18px
+      +glr
+      color: $text-color
+      font-weight: 300
+      border: 1px solid $text-color
+      text-align: center
+      padding: 20px 0
+      &:hover
+        background-color: #fff
+        color: #0F0F0F
+  &-card
+    &__title
+      display: block
+      font-size: 20px
+      font-weight: 700
+      +glr
+      text-transform: uppercase
+    &__subtitle
+      display: block
+      font-size: 16px
+      font-weight: 300
+      +glr
+      margin-top: 20px
+    &__price
+      display: block
+      font-size: 20px
+      font-weight: 700
+      +glr
+      margin-top: 20px
+@media (max-width: 1200px)
+  .hookah
+    &-block
+      &__button
+        width: 200px
+        height: 55px
+@media (max-width: 768px)
+  .hookah
+    &-block
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap
+      &__button
+        margin-top: 50px
+    &-card
+      &__image
+        width: 180px
+
+@media (max-width: 572px)
+  .hookah
+    &-block
+    &-card
+      &__title
+        font-size: 16px
+      &__subtitle
+        font-size: 12px
+      &__price
+        font-size: 15px
+      

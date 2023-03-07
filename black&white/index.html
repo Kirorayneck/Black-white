@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Black&White</title>
+</head>
+<body>
+  <div class="wrap">
+    <img src="img/hero/heroback.jpg" alt="" class="wrap-img">
+  </div>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-block">
+        <div class="navbar-block__item">
+          <a href="#" class="navbar-element">
+            <span class="navbar__menubutton"></span>
+          </a>
+        </div>
+        <div class="navbar-block__item navbar-block__none">
+          <div class="navbar-block__image">
+            <img src="img/navbar/navbar-point.svg" alt="point">
+          </div>
+          <span class="navbar-block__text">ул. Круглоуниверситетская 2/1 Б, <br> Киев, Украина</span>
+        </div>
+        <div class="navbar-block__item navbar-block__none">
+          <span class="navbar-block__text">Вс-Чт с 15:00 до 02:00; <br> Пт-Сб 15:00 до 03:00;</span>
+        </div>
+        <div class="navbar-block__item">
+          <div class="navbar-block__image">
+            <img src="img/navbar/navbar-tel.svg" alt="point">
+          </div>
+          <a href="tel:+38-093-023-05-22" class="navbar-block__link">+38-093-023-05-22</a>
+        </div>
+      </div>
+    </div>
+    <div id="menu-burger">
+      <ul class="navbar-menu__burger">
+        <li class="navbar-menu__item-active">
+          <a href="http://www.kirorayneck.ru/black&white/menu.html" class="navbar-menu__burger-point">Меню</a>
+        </li>
+        <li class="navbar-menu__item-active">
+          <a href="#price" class="navbar-menu__burger-point">Цены</a>
+        </li>
+        <li class="navbar-menu__item-active">
+          <a href="#services" class="navbar-menu__burger-point">Почему мы</a>
+        </li>
+        <li class="navbar-menu__item-active">
+          <a href="#gallery" class="navbar-menu__burger-point">Галерея</a>
+        </li>
+        <li class="navbar-menu__item-active">
+          <a href="#contacts" class="navbar-menu__burger-point">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section class="section hero">
+      <div class="container">
+        <div class="hero-logo">
+          <img src="img/hero/logo.png" alt="logo" class="hero-logo__image">
+        </div>
+        <h1 class="hero-title">Уютная кальянная в центре Киева</h1>
+        <button id="buttonToogleModal" class="button hero-button">Забронировать</button>
+      </div>
+    </section>
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="services-block-one">
+          <div class="services-block__card services-block__card--one">
+            <div class="services-card__image">
+              <img src="img/services/smoke.svg" alt="smoke">
+            </div>
+            <h3 class="services-card__text">Широкий ассортимент вкусов табака</h3>
+          </div>
+          <div class="services-block__card">
+            <div class="services-card__image">
+              <img src="img/services/game.svg" alt="game">
+            </div>
+            <h3 class="services-card__text">PS4 и настольные игры на любой вкус</h3>
+          </div>
+          <div class="services-block__card">
+            <div class="services-card__image">
+              <img src="img/services/money.svg" alt="money">
+            </div>
+            <h3 class="services-card__text">Акции и скидки постоянным клиентам</h3>
+          </div>
+        </div>
+        <div class="services-block-two">
+          <div class="services-block__card">
+            <div class="services-card__image-fix1">
+              <img src="img/services/skull.svg" alt="skull">
+            </div>
+            <h3 class="services-card__text">Незабываемая атмосфера и оригинальная подача</h3>
+          </div>
+          <div class="services-block__card">
+            <div class="services-card__image">
+              <img src="img/services/micro.svg" alt="micro">
+            </div>
+            <h3 class="services-card__text">Бесплатное караоке в пятницу и субботу с 22:00</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="price" class="section hookah">
+      <div class="container">
+        <div class="hookah-block">
+          <div class="hookah-block__card">
+            <div class="hookah-card__image">
+              <img src="img/hookah/hookah-silver.png" alt="silver" class="hookah-image">
+            </div>
+            <h3 class="hookah-card__title">Кальян SILVER</h3>
+            <h3 class="hookah-card__subtitle">(Adalya, Serbetli, Nakhla)</h3>
+            <h3 class="hookah-card__price">199 грн</h3>
+          </div>
+          <div class="hookah-block__card">
+            <div class="hookah-card__image">
+              <img src="img/hookah/hookah-gold.png" alt="gold" class="hookah-image">
+            </div>
+            <span class="hookah-card__title">Кальян GOLD</span>
+            <span class="hookah-card__subtitle">(Milano, Fumari, Adalya black)</span>
+            <span class="hookah-card__price">249 грн</span>
+          </div>
+          <div class="hookah-block__card">
+            <div class="hookah-card__image">
+              <img src="img/hookah/hookah-platinum.png" alt="platinum" class="hookah-image">
+            </div>
+            <span class="hookah-card__title">Кальян PLATINUM</span>
+            <span class="hookah-card__subtitle">(Darkside, Tangiers)</span>
+            <span class="hookah-card__price">299 грн</span>
+          </div>
+        </div>
+        <a class="button hookah-block__button" href="http://www.kirorayneck.ru/black&white/menu.html">Меню</a>
+      </div>
+    </section>
+    <section id="gallery" class="section gallery">
+      <div class="gallery-container">
+        <h2 class="gallery-title">галерея</h2>
+        <div class="gallery-block">
+          <div class="gallery-block__item">
+            <img src="img/gallery/1.jpg" alt="1" class="gallery-item__img">
+          </div>
+          <div class="gallery-block__item">
+            <img src="img/gallery/2.jpg" alt="2" class="gallery-item__img">
+          </div>
+          <div class="gallery-block__item">
+            <img src="img/gallery/3.jpg" alt="3" class="gallery-item__img">
+          </div>
+          <div class="gallery-block__item">
+            <img src="img/gallery/4.jpg" alt="4" class="gallery-item__img">
+          </div>
+          <div class="gallery-block__item">
+            <img src="img/gallery/5.jpg" alt="5" class="gallery-item__img">
+          </div>
+          <div class="gallery-block__item">
+            <img src="img/gallery/6.jpg" alt="6" class="gallery-item__img">
+          </div>
+          <div class="gallery-block__item">
+            <img src="img/gallery/7.jpg" alt="7" class="gallery-item__img">
+          </div>
+          <div class="gallery-block__item">
+            <img src="img/gallery/8.jpg" alt="8" class="gallery-item__img">
+          </div>
+        </div>
+        <div class="arrows gallery__arrows">
+          <div class="arrows__left">
+            <img src="img/gallery/arrow-left.png" alt="">
+          </div>
+          <!-- /.arrows__left -->
+          <div class="arrows__right">
+            <img src="img/gallery/arrow-right.png" alt="">
+          </div>
+          <!-- /.arrows__right -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <section id="contacts" class="section contacts">
+    <div id="map" class="map"></div>
+    <div class="container">
+      <div class="contacts-block">
+        <div class="contacts-block__contacts">
+          <div class="contacts-block__item">
+            <div class="contacts-block__image">
+              <img src="img/navbar/navbar-tel.svg" alt="point">
+            </div>
+            <a href="tel:+38-093-023-05-22" class="contacts-block__link">+38-093-023-05-22</a>
+          </div>
+          <div class="contacts-block__item">
+            <div class="contacts-block__image">
+              <img src="img/navbar/navbar-point.svg" alt="point">
+            </div>
+            <span class="contacts-block__item contacts-block__item-fix-1 fix-2">ул. Круглоуниверситетская 2/1 Б, Киев, Украина</span>
+          </div>
+          <span class="contacts-block__item contacts-block__item-fix contacts-block__item-fix-1">По всем вопросам напишите на black.white.cheand@gmail.com</span>
+          <span class="contacts-block__item contacts-block__item-fix">Время работы Летней Террасы с 15:00 до 23:00</span>
+          <span class="contacts-block__item contacts-block__item-fix">Вс-Чт с 15:00 до 02:00; <br> Пт-Сб 15:00 до 03:00;</span>
+          <div class="contacts-block__item">
+            <div class="contacts-block__image">
+              <img src="img/map/photo.svg" alt="photo">
+            </div>
+            <a href="#" class="contacts-block__link contacts-block__link-down">Мы в инстаграм</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer-block__content">
+          <a href="http://www.kirorayneck.ru/black&white/menu.html" class="footer-block__link">Меню</a>
+        </div>
+        <div class="footer-block__content">
+          <a href="#price" class="footer-block__link">Цены</a>
+        </div>
+        <div class="footer-block__content">
+          <a href="#services" class="footer-block__link">Почему мы</a>
+        </div>
+        <div class="footer-block__content">
+          <a href="#gallery" class="footer-block__link">Галерея</a>
+        </div>
+        <div class="footer-block__content">
+          <a href="#contacts" class="footer-block__link">Контакты</a>
+        </div>
+      </div>
+      <span class="footer-copyright">© 2019 Black & White</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="button modal-dialog__close" id="close">
+        <img src="img/navbar/close.png" alt="" class="modal-dialog__close-img">
+      </button>
+        <span class="modal-form__title">Забронировать столик</span>
+        <form action="mail.php" method="POST" id="modal-form" class="form modal-form__block">
+          <span class="modal-form__input-title">Имя</span>
+          <div class="input-wrap">
+            <input maxlength="15" type="text" name="username" class="username input modal-form__input"
+              placeholder="Ваше имя">
+          </div>
+          
+          <span class="modal-form__input-title">Дата</span>
+          <div class="date__wrap">
+            <input id="enterDate" type="text" class="input modal-form__input" disabled>
+            <div class="cal-button" id="button_calendar">
+              <img class="button_calendar-img" src="img/calendar/Polygon.svg" alt="">
+            </div>
+          </div>
+          <div id="cal-container" class="cal-container close">
+            <div id="calendar" class="window_calendar">
+              <div id="date">
+               
+                <div id="b_left">
+
+                    <img id="triangle-left" src="img/calendar/cal-arrow.svg" alt="" class="cal__arrow-left">
+
+                </div>
+                 <div id="text"></div>
+                <div id="b_right">
+
+                    <img id="triangle-right" src="img/calendar/cal-arrow.svg" alt="" class="cal__arrow-right">
+
+                </div>
+              </div>
+              <table>
+                <tr>
+                  <th>Пн</th>
+                  <th>Вт</th>
+                  <th>Ср</th>
+                  <th>Чт</th>
+                  <th>Пт</th>
+                  <th>Сб</th>
+                  <th>Вс</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          <span class="modal-form__input-title">Время</span>
+          <div class="input-wrap">
+            <input type="time" name="time" class="input modal-form__input">
+          </div>
+          
+          <span class="modal-form__input-title">Сколько человек</span>
+          <div class="input-wrap">
+            <input maxlength="2" type="text" name="guest" class="guestnumber input modal-form__input" placeholder="Количество гостей">
+          </div>
+          
+          <span class="modal-form__input-title">Телефон</span>
+          <div class="input-wrap">
+            <input type="text" id="phone" name="phone" class="input modal-form__input phone" placeholder="Ваш номер телефона">
+          </div>
+          <button type="submit" id="but-thx" class="button modal-form__button">Забронировать</button>
+        </form>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/button_up.js"></script>
+
+<a href="#" class="button-up"></a>
+
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/map.js"></script>
+<script src="js/menubtn.js"></script>
+<script src="js/script.js"></script>
+<script src="js/valid.js"></script>
+<script>
+  $(document).ready(function () {
+    /* Валидация бриф*/
+      $('#modal-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          time: {
+            required: true,
+            minlength: 5,
+            maxlength: 5
+          },
+          guest: {
+            required: true,
+            minlength: 1,
+            maxlength: 2
+          },
+          phone: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        errorElement: "span",
+        errorClass: "invalid",
+        messages: {
+          username: {
+            required: "Пожалуйста укажите имя",
+            minlength: "Имя - не менее двух символов",
+            maxlength: "Имя - не более пятнадцати символов"
+          },
+          guest: {
+            required: "Пожалуйста укажите сколько будет гостей"
+          },
+          time: {
+            required: "Пожалуйста укажите время в формате 'ЧЧ:ММ'",
+            minlength: "Пожалуйста укажите время в формате 'ЧЧ:ММ'",
+            maxlength: "Пожалуйста укажите время в формате 'ЧЧ:ММ'"
+          },
+          phone: {
+            required: "Пожалуйста укажите телефон"
+          },
+          email: {
+            email: "Введите корректный email",
+            required: "Заполните поле",
+          }
+        }
+      });
+    /* Маска для телефона */
+    $('.phone').mask('8 (999) 999-99-99')
+
+    /* Слайдер */
+    $('.gallery-block').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.arrows__left'),
+      nextArrow: $('.arrows__right'),
+      dots: false,
+      responsive: [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+          centerMode: false,
+          centerPadding: '0px',
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+        },
+        {
+          breakpoint: 768,
+            settings: {
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 2,
+            slidesToScroll: 1
+            }
+        },
+        {
+          breakpoint: 572,
+            settings: {
+            centerMode: false,
+            centerPadding: '0px',
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    
+  });
+  
+</script>
+
+  
+</body>
+</html>
